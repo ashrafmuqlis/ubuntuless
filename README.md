@@ -22,9 +22,9 @@ How to deploy:
 Quirks of each providers:
 1) hyperv - use CMD with administrative privileges. once "==> default: Machine booted and ready!" status, VM is already booted up. escape prompt with ctrl+c.
 2) virtualbox - once vagrant up, command line may timeout but the VM should be running. Check the VirtualBox GUI(show). may require port forwarding for SSH.
-3) vmware_desktop - status may show issues with network adapter. ignore it, as it runs as intended.
+3) vmware_desktop - once vagrant up, command line may timeout but the VM should be running. Check the VMware GUI. On Workstation Player, open the running VM by adding the .vmx file  under the ~.vagrant/machines/.../.../<<file_name>>.vmx. If using Workstation Pro, just scan for VMs.
 
-All these providers are configured with NAT as default network adapter. You will notice each provider will have a different IP address, no worries.
+All these providers are configured with NAT as default network adapter. You will notice each provider will have a different IP address, no worries as its each vendors design.
 
 Happy provisioning!
 
